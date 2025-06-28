@@ -1,0 +1,137 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: AOS styles */
+@import 'aos/dist/aos.css';
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Dark mode toggle */
+body.dark {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+body.dark header {
+  background: #1f2937;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+body.dark header h1 {
+  color: #f3f4f6;
+}
+
+header button {
+  padding: 0.4rem 1rem;
+  background: #e5e7eb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body.dark header button {
+  background: #374151;
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  color: white;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.25rem;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+}
+section.light {
+  background: #f9fafb;
+}
+body.dark section.light {
+  background: #1e293b;
+}
+section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+section p, section li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.service-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+body.dark .service-card {
+  background: #374151;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  color: #6b7280;
+}
+body.dark footer {
+  color: #9ca3af;
+}

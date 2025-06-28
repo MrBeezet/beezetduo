@@ -1,0 +1,276 @@
+/* === Global Styles === */
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #ffffff;
+  color: #222;
+}
+a {
+  color: #009999;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  padding: 6px 0;
+}
+button:hover {
+  background: #dddddd;
+}
+.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+.dark-mode a {
+  color: #4fc3f7;
+}
+.dark-mode .container {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+.dark-mode .card {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+.dark-mode footer {
+  background-color: #1def0e;
+  color: #ccc;
+}
+.dark-mode .toggle-btn {
+  background-color: #444;
+  color: #fff;
+}
+
+/* === Layout Containers === */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 20px;
+}
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+nav button {
+  background-color: #466382;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+nav button:hover {
+  background-color: #0056b3;
+}
+.toggle-btn {
+  background-color: #7faeef;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: chartreuse;
+}
+.toggle-btn:hover {
+  background-color: #47b1e6;
+}
+
+/* === Hero Section === */
+.hero {
+  background: rgb(157, 205, 247);
+  border-radius: 30px;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+}
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #007cf0, #00dfd8, #7928ca);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: fadeIn 1.5s ease-in-out;
+  transition: transform 0.3s ease;
+}
+.hero h2:hover {
+  transform: scale(1.05);
+}
+.hero-slogan {
+  font-size: 1.3rem;
+  color: #960d6d;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+/* === Animation Keyframes === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Cards and Grid === */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  background: rgb(164, 209, 220);
+  border-radius: 8px;
+  border: 1px solid rgb(216, 216, 13);
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
+  width: 180px;
+  height: 220px;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* === Resume, Blog, Contact, etc. === */
+.resume-section,
+.blog-section,
+.touch-section,
+.program-section,
+.what-section,
+.about-section {
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #EBEBEAFF;
+  padding: 1.5rem;
+  box-shadow: 0 0 1px #171a1f12, 0 0 2px #171a1f1F;
+  text-align: center;
+  
+}
+
+/* === Buttons and Links === */
+.action-button,
+.collab-btn,
+.Medium-button {
+  position: fixed;
+  right: 50px;
+  background-color: #aec00c;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 1000;
+}
+.action-button:hover {
+  background-color: #09401f;
+}
+.Medium-button {
+  bottom: 50px;
+  background-color: #56a1d3;
+}
+.collab-btn {
+  bottom: 70px;
+  background-color: #4d9acd;
+}
+.collab-btn:hover {
+  background-color: #3667ef;
+}
+
+/* === Social Buttons === */
+.whatsapp-button, .facebook-button, .twitter-button, .instagram-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.whatsapp-button { background-color: #25D366; }
+.whatsapp-button:hover { background-color: #09401f; }
+.facebook-button { background-color: #1877F2; }
+.facebook-button:hover { background-color: #043578; }
+.twitter-button { background-color: #1DA1F2; }
+.twitter-button:hover { background-color: #0c85d0; }
+.instagram-button { background-color: #C13584; }
+.instagram-button:hover { background-color: #ad6e92; }
+
+/* === Footer === */
+.footer-section {
+  background-color: #98d6e5;
+  color: #eee;
+  padding:1rem 3rem;
+  text-align: center;
+  border-top: 2px solid #0070f3;
+  border-radius: 10;
+  position: flex;
+}
+.footer-section a {
+  color: #00aaff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer-section a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* === Logo === */
+.logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .action-button,
+  .Medium-button,
+  .collab-btn {
+    right: 10px;
+    padding: 10px 14px;
+  }
+  .instagram-button {
+    padding: 10px 30px;
+  }
+}
