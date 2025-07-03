@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Image from 'next/image';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -24,22 +23,12 @@ export default function Home() {
 
   return (
     <div className={darkMode ? 'dark-mode layout' : 'light-mode layout'}>
-     <Head>
-  <title>Welcome to Beezetduo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Personal portfolio of Bilyaminu Muhammad BZ, Web Developer, Project Manager, and Founder of Beezetduo Digital Solution."
-  />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
-</Head>
 
 
       {/* Navigation */}
       <div id="container" className="container top-nav" data-aos="fade-down">
         <header className="topbar">
           <a href="#hero">
-<Image src="/logo.png" alt="Beezetduo Logo" className="logo" width={100} height={50} />
           </a>
           <nav>
             <button><a href="#hero">Home</a></button>
