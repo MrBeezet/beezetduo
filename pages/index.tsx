@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Image from 'next/image';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -39,7 +38,6 @@ export default function Home() {
       <div id="container" className="container top-nav" data-aos="fade-down">
         <header className="topbar">
           <a href="#hero">
-<Image src="/logo.png" alt="Beezetduo Logo" className="logo" width={100} height={50} />
           </a>
           <nav>
             <button><a href="#hero">Home</a></button>
