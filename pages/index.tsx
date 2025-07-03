@@ -29,7 +29,7 @@ export default function Home() {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Personal portfolio of Bilyaminu Muhammad BZ – Web Developer, Project Manager, and Founder of Beezetduo Digital Solution."
+    content="Personal portfolio of Bilyaminu Muhammad BZ, Web Developer, Project Manager, and Founder of Beezetduo Digital Solution."
   />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
 </Head>
@@ -39,7 +39,7 @@ export default function Home() {
       <div id="container" className="container top-nav" data-aos="fade-down">
         <header className="topbar">
           <a href="#hero">
-            <img src="/logo.png" alt="Beezetduo Logo" className="logo" />
+<Image src="/logo.png" alt="Beezetduo Logo" className="logo" width={100} height={50} />
           </a>
           <nav>
             <button><a href="#hero">Home</a></button>
@@ -59,7 +59,7 @@ export default function Home() {
         <div id="hero" className="container hero" data-aos="zoom-in">
           <h2  data-aos="fade-right" data-aos-delay="200" className="hero-heading">Welcome to Beezetduo</h2>
           <p className="hero-slogan" data-aos="fade-left" data-aos-delay="400">
-            Solving Africa's digital problems—one innovation at a time. We build tech that empowers, transforms, and connects.
+            Solving Africas digital problems one innovation at a time. We build tech that empowers, transforms, and connects.
           </p>
         </div>
 
@@ -77,9 +77,9 @@ export default function Home() {
             <div className="about-content" data-aos="fade-up" data-aos-delay="200">
               <h3><strong>Beezetduo Digital Solutions</strong></h3>
               <p><strong>🚀 Who We Are:</strong><br />
-                At Beezetduo Digital Solutions, we are more than just developers—we are passionate digital solutionists on a mission to transform ideas into impactful realities.
+                At Beezetduo Digital Solutions, we are more than just developers we are passionate digital solutionists on a mission to transform ideas into impactful realities.
               </p>
-              <p><mark>Founded by Bilyaminu Muhammad & Zara'u Muhammad.</mark></p>
+              <p><mark>Founded by Bilyaminu Muhammad & Zarau Muhammad.</mark></p>
               <p><em>Beezetduo</em> is a growing tech venture dedicated to empowering individuals, startups, and organizations through innovation, creativity, and strategic digital solutions.</p>
 
               <h4>🧠 What We Do</h4>
@@ -102,8 +102,8 @@ export default function Home() {
               <h4>🌍 Our Vision</h4>
               <p>To become a leading digital hub in Africa solving problems through innovation.</p>
 
-              <h4>🤝 Let’s Connect</h4>
-              <p>Whether you're building, learning, or collaborating, we're here for you.</p>
+              <h4>🤝 Lets Connect</h4>
+              <p>Whether youre building, learning, or collaborating, were here for you.</p>
             </div>
           )}
         </div>
@@ -119,7 +119,7 @@ export default function Home() {
 
             <div className="card" onClick={() => toggleCard(1)} data-aos="flip-right">
               <h3>Desktop Apps</h3>
-              {activeCard === 1 && <p>We create cross-platform admin tools.</p>}
+              {activeCard === 1 && <p>We create cross platform admin tools.</p>}
             </div>
 
             <div className="card" onClick={() => toggleCard(2)} data-aos="flip-left">
