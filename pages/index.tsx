@@ -1,6 +1,4 @@
-import '../styles/manual.css';
 import { useEffect, useState } from 'react';
-import Head from 'next/head';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
