@@ -23,15 +23,6 @@ export default function Home() {
 
   return (
     <div className={darkMode ? 'dark-mode layout' : 'light-mode layout'}>
-     <Head>
-  <title>Welcome to Beezetduo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Personal portfolio of Bilyaminu Muhammad BZ, Web Developer, Project Manager, and Founder of Beezetduo Digital Solution."
-  />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
-</Head>
 
 
       {/* Navigation */}
